@@ -1,0 +1,26 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background-image: url("12398452_112350711000_2.jpg");
+}
+.image{
+    border: dashed 1px red;
+    width: auto;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 1px;
+}
+img{
+    margin: 10px;
+    opacity: 1;/*透明度*/
+}
+.text{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+a:hover{
+    opacity: 0.5;
+}

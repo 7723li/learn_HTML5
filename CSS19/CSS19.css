@@ -1,0 +1,28 @@
+*{/*通配符*/
+    font-family: Aharoni;
+    margin: 0;
+    padding: 0;
+}
+div{
+
+}
+a.div{
+    color: #00fff5;
+}
+h1,h2{
+    color: #3f8830;
+}
+p,a{
+    color: #881618;
+    font-family: 微软雅黑;
+}
+.p1{
+    font-size: 30px;
+}
+.p2{
+    font-size: 60px;
+    color: yellow;
+}
+.p1.p2{
+    font-size: 40px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="CSS20.css" rel="stylesheet" type="text/css">
+    <style>
+        p[title="my_title"]{
+            color: #3f8830;
+        }
+        a[id="a1"]{
+            font-size: 50px;
+        }
+        [href="http://www.baidu.com"]{
+            font-size: 60px;
+        }
+        [title~="title"]{/*只要属性中包含该字符都可以继承其属性*/
+            font-size: 30px;
+            color: red;
+        }
+        [title="t"]{
+            color: #2980f5;
+        }
+    </style>
+</head>
+<body>
+    <p title="my_title">hello</p>
+    <p title="my title">hello</p>
+    <p title="title">hello</p>
+    <p title="title2">hello</p>
+    <p title="title hi">hello</p>
+    <p title="t">hello</p>
+    <p >hello</p>
+    <!--<p>fuck <strong>me <i>and</i> you</strong></p>&lt;!&ndash;后代选择器&ndash;&gt;-->
+    <p>fuck <strong>me <i>and</i> you</strong></p><!--子代选择器-->
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <ol>
+            <li>11</li>
+            <li>22</li>
+            <li>33</li>
+        </ol>
+    </div>
+    <a id="a1">123</a>
+    <br>
+    <a href="http://www.baidu.com">456</a>
+    <div id="div">fuck you</div>
+    <div class="div1"></div>
+    <div class="div1"></div>
+    <div>
+        子代选择器只能通过上一层父代继承属性，后代选择器任一辈分后代都可继承任一前辈的属性
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建文本过渡</title>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        p:hover{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            transition-delay: 100ms;/*开始延时时间*/
+            /*-webkit-transition-duration: 500ms;
+            -moz-transition-duration: 500ms;
+            -ms-transition-duration: 500ms;
+            -o-transition-duration: 500ms;!*支持所有浏览器*!*/
+            transition-duration: 1000ms;/*延时持续时间*/
+            /*transition-property:background-color,width;!*特定属性延时变化*!*/
+            /*-webkit-transition-timing-function: linear;
+            -moz-transition-timing-function: linear;
+            -ms-transition-timing-function: linear;
+            -o-transition-timing-function: linear;*/
+            transition-timing-function: ease-in-out;
+            /*贝赛尔曲线,linear(线性,default),ease(由慢变快),ease-out(开始快，后来慢),ease-in,ease-in-out*/
+        }
+    </style>
+</head>
+<body>
+<p></p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;/*取消列表排列效果*/
+}
+#div1{
+    width: 1000px;
+    height: 200px;
+    margin: 20px auto;
+}
+ul{
+    /*margin-left: 20px; ;*/
+    width: 260px;
+    float: left;
+}
+p{
+    text-align: center;
+    /*float: right;*/
+}

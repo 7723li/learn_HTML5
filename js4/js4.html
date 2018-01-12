@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="js4.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="onLoad()">
+<!--onClick-->
+    <!--<form>-->
+        <!--<input value="button" type="button" onclick="demo()">-->
+    <!--</form>-->
+    <!--<script>-->
+        <!--function demo() {-->
+            <!--alert("Hello")-->
+        <!--}-->
+    <!--</script>-->
+<!--onMouseOver,经过,onMouseOut,移出-->
+    <div class="div" onmouseover="onOver(this)" onmouseout="onOut(this)"></div>
+    <script>
+        function onOver(ooj) {
+            ooj.innerHTML="hello";
+        }
+        function onOut(ooj) {
+            ooj.innerHTML="World"
+        }
+    </script>
+<!--onChange，内容改变-->
+    <form>
+        <input type="text" onchange="onChange(this)">
+    </form>
+    <script>
+        function onChange() {
+            alert("changed");
+        }
+    </script>
+<!--onSelcet,选中内容-->
+    <form>
+        <input type="text" onselect="onSelect(this)">
+    </form>
+    <script>
+        function onSelect(bg) {
+            bg.style.background="red";
+        }
+    </script>
+<!--onFocus,光标选中-->
+<!--onBlur,移开光标-->
+    <form>
+        <input type="text" onfocus="onFocus(this)" onblur="onBlur(this)">
+    </form>
+    <script>
+        function onFocus(bg) {
+            bg.style.background="black" +
+                "";
+            bg.style.textAlign="center"
+        }
+        function onBlur(bg) {
+            bg.style.background="white";
+            bg.style.textAlign="left"
+        }
+    </script>
+<!--onLoad,网页加载-->
+    <!--<form>-->
+        <!--<input type="button" onfocus="onLoad()">-->
+    <!--</form>-->
+    <script>
+        function onLoad() {
+            alert("onLoad finished")
+        }
+    </script>
+<!--onUnload,关闭网页-->
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+（参考WebNote的HTML代码一起看）js代码注释
+
+function  saveStorage(id) {
+    var data=document.getElementById(id).value;
+    var time=new Date().getTime();
+    localStorage.setItem(time,data);
+    alert('数据已储存');
+    loadStroage("msg");
+}
+
+#加载本地数据
+function loadStroage(id) {
+	#定义变量result，用于最终打印在屏幕上
+    var result="<table border='1'>";
+	#localStorage.length为数据数量，如两条数据则长度为2
+    for (var i=0;i<localStorage.length;i++){
+	#定义变量key，用于加载本地数据的键值，键值为一串长数字，不必在意。此处与之前的GetItem方法一样
+        var key=localStorage.key(i);/*和前面WebStroage的localStorage.GetItem方法一样,key(i)用于获取第i个键*/
+	#定义变量value，用于加载key值对应的数据
+        var value=localStorage.getItem(key);
+	#获取当前日期，类似time.ctime()
+        var date=new Date();
+        date.setTime(key);
+	#类似str型，可进行加运算
+        result+="<tr><td>"+value+"</td><td>"+date+"</td></tr>";
+    }
+    result+="</table>";
+    var target=document.getElementById(id);
+    target.innerHTML=result;
+}
+
+#清楚本地储存功能
+function clearStorage() {
+    #使用自带的clear功能清除，参考WebStoratge笔记
+    localStorage.clear();
+    alert("数据已删除");
+    loadStroage("msg");
+}

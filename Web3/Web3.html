@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="Web3.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>name:</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" id="email"></td>
+        </tr>
+        <tr>
+            <td>tel:</td>
+            <td><input type="text" id="tel"></td>
+        </tr>
+        <tr>
+            <td>remarks:</td>
+            <td><input type="text" id="rem"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="save" onclick="saveStorage()"></td>
+        </tr>
+    </table>
+    <hr><!--划线-->
+    <p>检索:
+        <input type="text" id="find">
+        <input type="button" value="检索" onclick="findStorage('msg')">
+    </p>
+    <p id="msg"></p>
+</body>
+</html>

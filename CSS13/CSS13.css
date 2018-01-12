@@ -1,0 +1,34 @@
+body{
+    margin-top: 0;
+    text-align: center;
+}
+.img1{
+    width: 512px;
+    /*margin-left: 200px;*/
+}
+.class1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 10px black;
+    padding: 10px;
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+.class2{
+    border: solid 7.5px rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
+    padding: 7.5px;
+}
+.class3{
+    border: solid 5px rgba(0, 0, 0, 0.50);
+    border-radius: 50px;
+    padding: 5px;
+}
+.class4{
+    border: solid 2.5px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 2.5px;
+    background-color:rgba(0, 0, 0, 0.05);
+}

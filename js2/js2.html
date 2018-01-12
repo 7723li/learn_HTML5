@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="pid">Hello</p>
+    <script>
+        document.write("<h1>h1</h1>");
+        document.write("1");
+        document.write("1");
+        document.write("1");
+        document.write("1");
+    </script>
+    <script>
+        document.write("<h2>h2</h2>");
+    </script>
+    <script>
+        document.write("<h3>h3</h3>");
+    </script>
+    <script>
+        document.getElementById("pid").innerHTML="李氏家族";
+    </script>
+    <script>
+        var j=10;
+        document.write("今天吃了"+j+"坨屎");
+        var string="hello";
+        var flag=true;
+        var list=[string,flag];
+        var arr=new Array("1","2","3");
+        document.write('<br>'+list);
+        document.write('<br>'+arr+"<br>"+null);
+    </script><br>
+    <script>
+        var i=10;
+        var j=10;
+        document.write(i===j);
+        switch (i){
+            case 1:
+                break;
+            case 2:
+                break;
+        }
+        document.write('<br>');
+        while(true){
+            i+=1;
+            if (i==20){
+                break;
+            }
+        }
+        document.write(i);
+        var a1=10;
+        var a2=20;
+        var sum=a1+a2;
+        alert(sum);
+        function a(a,b) {
+            sum=a+b;
+            return sum;
+        }
+        document.write("<br>"+a(10,20));
+        var str='123';
+        function demo() {
+            try{
+                alert(str)
+            }
+            catch (err){
+                alert(err)
+            }
+        }
+        demo();
+    </script>
+    <!--<button onclick="alert(a(10,20))">a()-->
+    <form>
+        <input type="button" onclick="alert(a(51,10))" value="123">
+    </form>
+</body>
+</html>

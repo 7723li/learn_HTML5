@@ -1,0 +1,18 @@
+h1{
+    color: red;
+    direction: ltr;
+    text-align: center;
+}
+
+p{
+    text-indent: 2em;
+    width: 150px;/*自动换行要规定宽度*/
+    word-wrap: break-word;
+    font-family: 微软雅黑;
+    font-size: 10px;
+    font-weight: 100;
+}
+div{
+    padding-left: 2em;
+    text-transform: capitalize;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="div">
+        <form>
+            <input type="button" value="button" id="button">
+            <input type="button" value="button1" id="button1">
+            <a href="http://www.baidu.com" target="_blank" id="aid">baidu</a>
+        </form>
+
+    </div>
+    <script>
+        var button=document.getElementById("button");
+        button.onclick=function () { alert("hello DOM0") };/*被覆盖掉*/
+        button.onclick=function () { alert("hello DOM0") };
+    </script>
+
+    <script>
+        var button=document.getElementById("button1");
+        button.addEventListener("click",demo,true);/*事件名，事件处理函数，布尔值*/
+        button.addEventListener("click",demo2);/*不会被覆盖*/
+        function demo(){
+            alert("hello DOM2")
+        }
+        function demo2() {
+            alert("hello DOM2_2")
+        }
+//        button.removeEventListener("click",demo2)
+    </script>
+
+    <script>
+        var btn1=document.getElementById("button1");
+        if (btn1.addEventListener){
+            btn1.addEventListener("click",demo3);
+        }else if (btn1.addEventListener){
+            btn1.attachEvent("onclick",demo4);
+        }else{
+            btn1.onclick=demo();
+        }
+        function demo3() {
+            alert("fuck")
+        }
+        function demo4() {
+            alert("Fuck")
+        }
+    </script>
+
+    <script>
+        var a=document.getElementById("button1")
+//        a.addEventListener("mouseover",showType);/*光标划过*/
+        a.addEventListener("click",showType);
+        document.getElementById("div").addEventListener("click",showDiv);/*事件的冒泡，由下向上执行*/
+        document.getElementById("aid").addEventListener("click",showA)
+        function showType(event) {
+            alert(event.type);/*获取事件类型*/
+            alert(event.target);/*[object HTMLInputElement]*/
+            event.stopPropagation();/*阻止事件冒泡*/
+        }
+        function showDiv() {
+            alert("div");
+        }
+        function showA(event) {
+            event.stopPropagation();
+            event.preventDefault();/*阻止默认行为，例如此处阻止a标签跳转到指定链接*/
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python开发web前端发表说说系统</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0}/*外边距为0和内边距为0,兼容浏览器*/
+        body{background: url("微信图片_20170502201022.jpg")}
+        #shuoshuo{
+            width: 600px;
+            height: 185px;
+            background: white;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+        #shuoshuo p{
+            font-size: 12px;
+            font-family: 微软雅黑;
+            color: gray;
+            text-indent: 20px;/*首行缩进*/
+            line-height: 40px;
+        }
+        #shuoshuo .center{
+            width: 560px;
+            height: 100px;
+            border: solid #0da7ff 1px;
+            margin: 0 auto;
+        }
+        #shuoshuo .kimoji{
+            width: 560px;
+            height: 35px;
+            /*background: red;*/
+            margin: 5px auto;
+            position: relative;/*定位基准*/
+        }
+        #shuoshuo .kimoji span{
+            width: 80px;
+            height: 30px;
+            background: orange;
+            display: block;/*显示*/
+            color: rgba(71, 47, 49, 0.75);
+            font-size: 12px;
+            font-family: 微软雅黑;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 3px;
+            float: right;/*放倒右边*/
+            cursor: pointer;/*鼠标事件*/
+        }
+        #shuoshuo .kimoji .face{
+            width: 256px;
+            height: 128px;
+            background: white;
+            border: solid 1px gray;
+            position: absolute;/*绝对定位*/
+            top: 20px;
+            left: 30px;
+            display: none;
+        }
+        .text{
+            width: 600px;
+            height: 790px;
+            margin: 15px auto;
+            /*background: red;*/
+        }
+        .text .liuyan{
+            width: 580px;
+            height: 100px;
+            padding: 10px;/*内边距*/
+            margin-bottom: 10px;
+            background: white;
+        }
+        .text .liuyan dl{
+            height: 50px;
+            border-bottom: 2px solid gray;
+            padding-bottom: 2px;
+        }
+        .text .liuyan dl dt{
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+        .text .liuyan dl dt img{
+            border-radius: 25px;
+        }
+        .text liuyan dl dd{
+            width: 500px;
+            height: 50px;
+            font-size: 18px;
+            line-height: 50px;
+            font-family: 微软雅黑;
+            float: right;
+        }
+        .text .liuyan .con{
+            font-size: 14px;
+            line-height: 50px;
+            font-family: 微软雅黑;
+            text-indent: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="shuoshuo">
+        <p>有什么新鲜事要告诉大家</p>
+        <div class="center" contenteditable="true"></div><!--内容可编辑区域-->
+        <div class="kimoji">
+            <img src="fuck.gif" width=20 height=20 class="facebut">
+            <span class="post">发表</span>
+            <div class="face">
+                <img src="微信图片_20170502201022.jpg" width=64 title="1">
+                <img src="3a96d1fdfc0392451fe7258c8e94a4c27c1e25b8.jpg" width=64 title="2">
+                <img src="12_20170623114021.JPG" width=64 title="3">
+                <img src="fuck.gif" width=64 title="4">
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <!--<div class="liuyan">-->
+            <!--<dl>-->
+                <!--<dt><img src="noavatar_middle.gif" width="50"   height="50"></dt>-->
+                <!--<dd>shabicaonima</dd>-->
+            <!--</dl>-->
+            <!--<div class="con"></div>&lt;!&ndash;灰线&ndash;&gt;-->
+        <!--</div>-->
+    </div>
+    <script  type="text/javascript" src='jquery-1.10.2.mim.js'></script>
+    <script type="text/javascript">/*表情*/
+        $("img.facebut").click(function (e) {
+            $(".face").slideDown();
+            e.stopPropagation();/*阻止冒泡过程，既加载过程*/
+        })
+        $(document).click(function () {
+            $(".face").slideUp();
+        })
+    </script>
+</body>
+</html>

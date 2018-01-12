@@ -1,0 +1,24 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    width: 50px;
+    margin: 1px;
+    border: solid 1px;
+    display: inline;
+    text-align: center;
+}
+
+a:link,a:visited,a:active{
+    text-decoration: none;/*text-decoration在html语言中表示属性规定添加到文本的修饰（例如加下划线）。修饰的颜色由 "color" 属性设置。*/
+    text-align: center;
+    color: black;
+    background: #21f8ff;
+}
+a:hover{
+    color: #00fff5;
+    background: #ff6400;
+}

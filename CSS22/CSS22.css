@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+}
+li{
+    display: inline-block;
+}
+.p1{
+    width: 200px;
+    line-height: normal;
+    max-width: 200px;
+    min-width: 150px;
+    cursor: alias;
+    visibility: visible;
+}
+.p2{
+    width: 200px;
+    line-height: 50%;
+}
+.p3{
+    width: 200px;
+    line-height: 200%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建css选择器</title><!--一般只出现在文档内嵌样式表和外部样式表-->
+    <style type="text/css">
+        /*.class1{!*此处记得加.*!
+            font-size: 40px;
+            color: aqua;
+        }!*是一个全局元素*!
+        !**{
+            font-size: 40px;
+            color: aqua;
+        }!*所有元素*!*!
+        !*a{
+            font-size: 40px;
+            color: aqua;
+        }!*根据类型选择*!*!
+        #id1{
+            font-size: 100px;
+            color: aqua;
+        }*/
+        /*[href="2_1-htmlborder.html"]{
+            font-size: 80px;
+            color: orange;
+        }!*属性选择器*!*/
+        /*a{
+            font-size: 10px;
+            color: orange;
+        }
+        a:hover{
+            font-size: 80px;
+            color: aqua;
+        }!*冒号的大功能*!*/
+        [href="2_1-htmlborder.html"]{
+            font-size: 40px;
+            color: orange;
+        }
+        [href="2_1-htmlborder.html"]:hover{
+            font-size: 80px;
+            color: aqua;
+        }
+    </style>
+</head>
+<!--id和class的效果看似一样，区别是class可以重复出现，id(最好)只可以出现一次-->
+<body>
+    <a href="2_1-htmlborder.html">hello</a>
+    <br><br>
+    <a href="1-css.html">hello again</a>
+    <br><br>
+    <a class="class1">你好</a>
+    <!--<p class="class2">你好</p>
+    <h1 id="id1">你好</h1>
+    <h1>你好吗</h1>-->
+</body>
+</html>

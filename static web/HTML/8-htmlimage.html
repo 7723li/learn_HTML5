@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建图片</title>
+</head>
+<body>
+<!--<a href="http://www.baidu.com" target="_blank">
+    &lt;!&ndash;alt若图片出错则显示该内容&ndash;&gt;
+    <img src="124196.jpg" width="128px" alt="备用内容" &lt;!&ndash;height="128"&ndash;&gt; >
+</a>-->
+<!--map客户端分区响应图的关键元素；area可以有多个，每个各自代表图像上可被点击的一块区域-->
+<img src="timg.jpg" alt="图片出错" usemap="#map1"><!--map1前加#-->
+<!--<form>
+    <input type="image" src="timg.jpg">&lt;!&ndash;调试用&ndash;&gt;
+</form>-->
+<map name="map1"><!--此处用name-->
+    <!--area第一类元素导航到指定URL，href和alt两个-->
+    <!--area第二类分shape属性和coords属性，起共同作用-->
+    <!--shape有Rect（四个整数图像左上右下边缘,用逗号分隔），
+    Circle（三个整数图像左右边缘到圆心的距离，圆的半径），
+    Poly（代表一个多边形，至少包含六个逗号分隔的整数，每一对数字各代表多边形的一个顶点）,
+    Default（默认整张图片，不需要coords）-->
+    <area href="weather.html" shape="rect" coords="19,142,94,214" target="_blank">
+    <area href="time.html" shape="rect" coords="116,142,189,214" target="_blank">
+</map>
+<br>
+<img src="circle.jpg" width="128" usemap="#map2">
+<!--圆形的话因为分辨率已知，所以不需像上面一样调试-->
+<map name="map2">
+    <area href="time.html" shape="circle" coords="64,64,64" target="_blank">
+</map>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM - >HTML , CSS</title>
+    <link href="js5.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <p>Hello</p>
+    <p id="Hello">Hello</p>
+    <a href="http://www.baidu.com" id="aid">baidu</a>
+    <img src="../CSS29/不能删的垃圾/12398452_071055542000_2.jpg" id="imgid">
+    <form>
+        <input type="button" value="button" onclick="demo(),demo1()">
+    </form>
+    <script>
+        function demo() {
+            var str=document.getElementById("Hello");
+            var str1=document.getElementsByTagName("<p>");//相同元素中的第一个
+            str.innerHTML="1";
+            str1.innerHTML="2";
+            document.getElementById("aid").href="http://www.bilibili.com";
+            document.getElementById("imgid").src="../CSS29/不能删的垃圾/12398452_081024627000_2.jpg"
+        }
+    </script>
+    <div class="div" id="div">
+        nihao
+    </div>
+    <script>
+        function demo1() {
+            document.getElementById("div").style.background="blue";
+            document.getElementById("div").style.width="200px";
+            document.getElementById("imgid").style.width="200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建视频</title>
+</head>
+<body>
+<!--属性：src,height,width,autoplay,controls(播放控件),loop（循环播放）
+preload(None不载入,Metadata载入第一帧,Auto请求下载整个视频，浏览器可以忽略，默认)，
+poster封面，muted静音-->
+<video src="Clip_480_5sec_6mbps_h264.mp4" height="256" controls preload="auto" poster="QQ截图20170529215053.png">
+    <!--source设置视频格式-->
+    <!--兼容所有浏览器，最好一起设置MP4和ogg格式-->
+    <source src="Clip_480_5sec_6mbps_h264.mp4" type="<video/mp4>"><!--若上面视频播放失败，播放此视频-->
+    <!--<source src="Clip_480_5sec_6mbps_h264.ogv" type="<video/ogg>">-->
+    <!--<source src="Clip_480_5sec_6mbps_h264.mp3" type="<video/mpeg>">-->
+<video/>
+</body>
+</html>

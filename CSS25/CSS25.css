@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    background: #21f8ff;
+}
+.changed{
+    /*transform: translate(100px,100px);
+    -webkit-transform: translate(100px,100px);!*chrome*!
+    -ms-transform: translate(100px,100px);!*ie*!
+    -moz-transform: translate(100px,100px);!*firefox*!
+    -o-transform: translate(100px,100px);!*opera*!*/
+    /*====================================================*/
+    /*transform: rotate(-30deg);*/
+    /*====================================================*/
+    /*margin: 2px;
+    transform: scale(0.5,0.5);*/
+    /*====================================================*/
+    /*transform: skew(10deg,10deg);!*旋转，x轴,y轴*!*/
+    /*====================================================*/
+    transform: rotateX(120deg) rotateY(120deg);/*3D效果，实际上没有什么效果*/
+}

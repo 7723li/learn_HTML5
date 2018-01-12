@@ -1,0 +1,20 @@
+#未被点击
+a:link{
+    color: red;
+    #去掉链接的下划线
+    text-decoration: blink;
+    #背景颜色
+    background-color: black;
+}
+#已被点击
+a:visited{
+    color: yellow;
+}
+#鼠标划过
+a:hover{
+    color: blue;
+}
+#正在点击
+a:active{
+    color: aqua;
+}

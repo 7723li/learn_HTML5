@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建盒子模型</title>
+    <style type="text/css">
+        .class{
+            text-align: center;
+            border: 1px solid black;
+            background-color: #e9ffaa;
+            /*padding-top: 100px;!*边框到内容区域距离,内边框*!
+            padding-bottom: 100px;
+            padding-left: 100px;
+            padding-right: 100px;*/
+            padding: 100px/* 10px 50px 30px*/;/*上,右,下，左*/
+            margin: 100px;/*外边框*/
+            background-clip: content-box;/*填充范围为内容区域,默认为padding-box*/
+        }
+    </style>
+</head>
+<body>
+<div class="class">
+    nihao
+</div>
+</body>
+</html>

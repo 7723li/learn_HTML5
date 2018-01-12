@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建动画</title>
+    <style type="text/css">
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        p:hover{
+            animation-duration: 1000ms;
+            animation-delay: 200ms;
+            animation-name: nihao;
+            animation-iteration-count: infinite;/*动画重复次数*/
+            animation-direction: alternate;/*默认为normal属性,反方向运行,即奇数次正方形，偶数次反方向,*/
+        }
+        /*动画属性*/
+        @keyframes nihao {
+            from{/*进入动画效果后从此处执行*/
+                width: 100px;
+                height: 100px;
+                background-color: black;
+            }
+            50%{
+                width: 150px;
+                height: 150px;
+                background-color: purple;
+            }
+            75%{
+                width: 175px;
+                height: 175px;
+                background-color: orange;
+            }
+            to{/*动画属性中必须以to结束*/
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+            }
+            /*过渡与动画的区别是，过渡不会自动变化,可以保留变化效果*/
+        }
+    </style>
+</head>
+<body>
+<p></p>
+</body>
+</html>

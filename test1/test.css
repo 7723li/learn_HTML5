@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.video_div{
+    padding-top: 10px;
+}
+.video_ul{
+    height: 260px;
+    /*background-color: #21f8ff;*/
+}
+.video_ul li{
+    list-style: none;
+}
+.video_ul li .video{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-align: center;
+    width: 20%;
+    height: 256px;
+    float: left;
+}

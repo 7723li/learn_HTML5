@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宣传页</title>
+    <style>
+        .img{
+            /*vertical-align: middle;!*垂直居中*!*/
+            margin-top: 100px;/*距离边缘距离*/
+            width: 512px;
+        }
+        /*此处有两种方法，动画和变换，使用变换更加简便*/
+        html:hover .img{/*应用到整个HTML中，只要鼠标不离开页面，动画效果不会改变*/
+            /*animation-name: img;
+            animation-delay: 500ms;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;!*鼠标不动时可保留动画最终效果*!*/
+            transition-delay: 500ms;
+            transition-duration: 1s;
+            width: 64px;
+            margin-top: 0px;
+        }
+        /*@keyframes img {
+            to{
+                width: 64px;
+                margin-top: 0px;
+            }
+        }*/
+        .div{
+            text-align: center;/*初次出现于css-4,亦可应用于图片*/
+        }
+        .p1{
+            font-family: 微软雅黑;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px #56ffd6;
+            opacity: 1;
+        }
+        html:hover .p1{
+            transition-delay:500ms ;
+            transition-duration: 1s;
+            font-family: 微软雅黑;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px #56ffd6;
+            opacity: 0;/*透明度,1完全不透明，0完全透明*/
+        }
+    </style>
+</head>
+<body>
+<div class="div"><!--盒子模型的基本元素,网页排版的最重要元素-->
+    <img src="124196.jpg" class="img">
+    <p class="p1">nihao</p>
+</div>
+</body>
+</html>

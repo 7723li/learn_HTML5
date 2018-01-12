@@ -1,0 +1,27 @@
+重点appWeb.js
+sessionStorage只支持在浏览器不关闭的情况下，浏览器关闭后数据不能保存（查看方法：F12-Resources，Session Storage）
+LocalStorage讲数据保存到客户端本地的硬件设备，浏览器关闭后再启动可照常读取数据（查看方法：F12-Resources，Local Storage）
+
+document.getElementById方法用于获取对应id的输入框的内容
+
+Web Storage仅仅是为了在本地“存储”数据而生
+Web Storage拥有setItem,getItem,removeItem,clear等方法
+localStorage和sessionStorage都具有以上相同的操作方法
+
+setItem存储value
+用途：将value存储到key字段
+用法：.setItem( key, value)
+
+getItem获取value
+用途：获取指定key本地存储的值
+用法：.getItem(key)
+
+removeItem删除key
+用途：删除指定key本地存储的值
+用法：.removeItem(key)
+
+clear清除所有的key/value
+用途：清除所有的key/value
+用法：.clear()
+
+innerHTML：打印在屏幕上

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="pid1"></p>
+    <p id="pid2"></p>
+    <form>
+        <input id="button" type="button" value="button">
+    </form>
+    <script>
+        <!--与事件捕捉相似，不同于不需定义函数名称-->
+        var x=document.getElementById("button");
+
+        document.getElementById("button").addEventListener("click",function () {
+            document.getElementById("pid1").innerHTML="Hello";
+        });
+
+        x.addEventListener("click",HELLO);
+        x.addEventListener("click",WORLD);
+        x.removeEventListener("click",HELLO);
+
+        function HELLO() {
+            alert("HELLO")
+        }
+        function WORLD() {
+            alert("WORLD")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+tr,th,td{
+     border: 5px solid blue;
+     text-align: center;
+ }
+#tb{
+    /*background: url("fuck.gif");*/
+    border-collapse: collapse;/*折叠边框*/
+    height: 150px;
+    width: 500px;
+}
+tr.alt{
+    background: #00fff5;
+}

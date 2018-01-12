@@ -1,0 +1,21 @@
+#div{
+    color: #881618;
+}
+/*!*后代选择器*!*/
+/*p strong{*/
+    /*color: blueviolet;*/
+/*}*/
+/*!*后代选择器*!*/
+/*p strong i{*/
+    /*!*text-align: center;*!*/
+    /*color: #ff6400;*/
+/*}*/
+/*子代选择器*/
+p>strong>i{
+    color: #ff6400;
+    font-size: 15px;
+}
+li+li{
+    font-size: 50px;
+    color: crimson;
+}
